@@ -7,7 +7,6 @@ pipeline {
     stage('Say Hello') {
       steps {
         sh 'echo "Hello ${MY_NAME}!"'
-'''
       }
     }
 
