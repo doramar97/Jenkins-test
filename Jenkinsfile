@@ -1,15 +1,10 @@
 pipeline {
-  agent {
-    node {
-      label 'ec2'
-    }
-
-  }
+  agent any
   stages {
     stage('Say Hello') {
       steps {
         sh '''echo \'Hello!\'
-java --version'''
+'''
       }
     }
 
